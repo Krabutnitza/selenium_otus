@@ -1,7 +1,7 @@
 package com.otus.pages;
 
 import com.otus.guicescoped.GuiceScoped;
-import com.otus.po.AbsPageObject;
+import com.otus.pajeobject.AbsPageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

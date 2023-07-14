@@ -1,4 +1,4 @@
-package com.otus.po;
+package com.otus.pajeobject;
 
 import com.google.inject.Inject;
 import com.otus.guicescoped.GuiceScoped;
