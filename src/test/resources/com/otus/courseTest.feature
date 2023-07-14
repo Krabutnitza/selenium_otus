@@ -1,8 +1,8 @@
-#language: ru
+#language: en
 
-Функционал: Фильтрация
+Feature: Otus test
 
   @filter
-  Сценарий: Выбор курса по названию (фильтрация)
-    И Открыта главная страница
-    И Найти курс по фильтру 'C++ Developer. Professional'
+  Scenario: : Choose course by name
+    And Open main page
+    And Find course by filter 'C++ Developer. Professional'

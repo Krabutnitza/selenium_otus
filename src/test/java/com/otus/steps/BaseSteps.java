@@ -3,7 +3,7 @@ package com.otus.steps;
 import com.otus.guicescoped.GuiceScoped;
 import com.otus.pages.BasePage;
 import com.otus.pajeobject.AbsPageObject;
-import io.cucumber.java.ru.И;
+import io.cucumber.java.en.And;
 
 import javax.inject.Inject;
 
@@ -13,7 +13,7 @@ public class BaseSteps extends AbsPageObject {
         super(guiceScoped);
     }
 
-    @И("^Открыта главная страница$")
+    @And("^Open main page$")
     public void openMainPage() {
         new BasePage(driver).open();
     }

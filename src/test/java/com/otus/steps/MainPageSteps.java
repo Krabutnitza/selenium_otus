@@ -3,7 +3,7 @@ package com.otus.steps;
 import com.otus.guicescoped.GuiceScoped;
 import com.otus.pages.MainPage;
 import com.otus.pajeobject.AbsPageObject;
-import io.cucumber.java.bg.И;
+import io.cucumber.java.en.And;
 
 import javax.inject.Inject;
 
@@ -13,7 +13,7 @@ public class MainPageSteps extends AbsPageObject {
         super(guiceScoped);
     }
 
-    @И("^Найти курс по фильтру '(.+)'$")
+    @And("^Find course by filter '(.+)'$")
     public void filterCourseName(String courseName) {
         new MainPage(driver).getCourse(courseName);
     }

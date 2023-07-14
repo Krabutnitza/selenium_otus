@@ -1,12 +1,19 @@
 package com.otus.driver;
 
+import com.google.inject.Inject;
 import com.otus.exceptions.DriverNotSupportedException;
 import org.openqa.selenium.WebDriver;
 
+import java.util.Locale;
+
 public class DriverFactory implements IDriverFactory {
 
-    private String browserType = System.getProperty("browser");
+    private String browserType = "";
 
+    @Inject
+    public DriverFactory() {
+        browserType = System.getProperty("browser", "chrome").toLowerCase(Locale.ROOT);
+    }
 
     @Override
     public WebDriver getDriver() throws DriverNotSupportedException {
