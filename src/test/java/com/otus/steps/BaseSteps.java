@@ -15,6 +15,6 @@ public class BaseSteps extends AbsPageObject {
 
     @And("^Open main page$")
     public void openMainPage() {
-        new BasePage(driver).open();
+        new BasePage(guiceScoped).open();
     }
 }

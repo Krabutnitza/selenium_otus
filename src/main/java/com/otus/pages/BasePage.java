@@ -2,12 +2,13 @@ package com.otus.pages;
 
 import com.otus.guicescoped.GuiceScoped;
 import com.otus.pajeobject.AbsPageObject;
-import org.openqa.selenium.WebDriver;
+
+import javax.inject.Inject;
 
 public class BasePage extends AbsPageObject {
-
-    public BasePage(WebDriver driver) {
-        super((GuiceScoped) driver);
+    @Inject
+    public BasePage(GuiceScoped guiceScoped) {
+        super(guiceScoped);
     }
 
     public String baseUrl = System.getProperty("webdriver.base.url", "https://otus.ru/");

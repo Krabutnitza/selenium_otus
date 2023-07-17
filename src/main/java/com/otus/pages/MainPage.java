@@ -3,14 +3,15 @@ package com.otus.pages;
 import com.otus.guicescoped.GuiceScoped;
 import com.otus.pajeobject.AbsPageObject;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import javax.inject.Inject;
 import java.util.List;
 
 public class MainPage extends AbsPageObject {
-    public MainPage(WebDriver driver) {
-        super((GuiceScoped) driver);
+    @Inject
+    public MainPage(GuiceScoped guiceScoped) {
+        super(guiceScoped);
     }
 
     List<WebElement> courses = driver.findElements(By.xpath("//div[@class=\"lessons\"]/a"));

@@ -3,7 +3,7 @@ package com.otus.steps;
 import com.otus.guicescoped.GuiceScoped;
 import com.otus.pages.MainPage;
 import com.otus.pajeobject.AbsPageObject;
-import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 
 import javax.inject.Inject;
 
@@ -13,8 +13,8 @@ public class MainPageSteps extends AbsPageObject {
         super(guiceScoped);
     }
 
-    @And("^Find course by filter '(.+)'$")
+    @Then("^Find course by filter '(.+)'$")
     public void filterCourseName(String courseName) {
-        new MainPage(driver).getCourse(courseName);
+        new MainPage(guiceScoped).getCourse(courseName);
     }
 }

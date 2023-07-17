@@ -1,15 +1,17 @@
 package com.otus.pages;
 
-import com.otus.pages.BasePage;
+import com.otus.guicescoped.GuiceScoped;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import javax.inject.Inject;
+
 public class CategoryPage extends BasePage {
 
-  public CategoryPage(WebDriver driver) {
-    super(driver);
+  @Inject
+  public CategoryPage(GuiceScoped guiceScoped) {
+    super(guiceScoped);
   }
 
   public void openProgrammingCoursePage() {
