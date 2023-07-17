@@ -1,9 +1,9 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
-import po.Po;
+import pageobject.PageObject;
 
-public class BasePage extends Po {
+public class BasePage extends PageObject {
 
   public BasePage(WebDriver driver) {
     super(driver);

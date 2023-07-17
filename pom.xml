@@ -76,6 +76,7 @@
             <id>production</id>
             <properties>
                 <webdriver.base.url>https://otus.ru</webdriver.base.url>
+                <categoryProgramming.base.url>https://otus.ru/categories/programming/</categoryProgramming.base.url>
             </properties>
         </profile>
         <profile>

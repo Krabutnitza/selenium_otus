@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+
 public class CategoryPage extends BasePage {
 
   public CategoryPage(WebDriver driver) {
@@ -12,7 +13,7 @@ public class CategoryPage extends BasePage {
   }
 
   public void openProgrammingCoursePage() {
-    driver.get("https://otus.ru/categories/programming/");
+    driver.get(System.getProperty("categoryProgramming.base.url"));
   }
 
   public void dragAndDropElement() {
