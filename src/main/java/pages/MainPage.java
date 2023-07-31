@@ -10,6 +10,9 @@ public class MainPage extends BasePage {
   public MainPage(WebDriver driver) {
     super(driver);
   }
+  public void open() {
+    driver.get(baseUrl);
+  }
 
   List<WebElement> courses = driver.findElements(By.xpath("//div[@class=\"lessons\"]/a"));
 

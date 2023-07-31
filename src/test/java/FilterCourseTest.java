@@ -24,7 +24,7 @@ public class FilterCourseTest {
   }
   @Test
   public void filter_courses_test() {
-    new BasePage(driver).open();
+    new MainPage(driver).open();
     new MainPage(driver).getCourse("Специализация сетевой инженер");
   }
 }
